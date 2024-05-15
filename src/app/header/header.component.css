@@ -1,0 +1,99 @@
+.active{
+    transition: 0.5s;
+}
+header{
+    position: -webkit-sticky;
+    min-width: 98%;
+    position: sticky;
+    top:0;
+}
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #070720;
+    justify-content: space-between;
+    position: sticky;
+    min-height: 50px;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    margin:7px;
+}
+.header .header-left-side{
+    display: flex;
+    align-items: center;
+    margin-left: 7px;
+}
+.header .header-right-side{
+    display: flex;
+    margin-right: 15px;
+}
+.phone-navbar {
+    top:0;
+    position: relative;
+    display: none;
+    background-color: #070720;
+    height: 60px;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+}
+
+.phone-navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.phone-navbar i {
+    margin: 10px;
+}
+
+.slide-nav{
+    display: none;
+}
+.show-nav{
+    right:0;
+    position: absolute;
+    display: unset !important;
+  }
+
+  .right{
+    transition: all 0.3s;
+    right:-400px;
+  }
+
+  .left{
+    transition: all 0.3s;
+    right: 0px;
+  }
+
+  .nav-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .nav-nav a{
+    color: black;
+    font-size: 16px;
+    margin: 5px;
+    text-decoration: none;
+  }
+@media only screen and (max-width: 600px) {
+    .header{
+        display: none;
+    }
+    .burger{
+        display: flex !important;
+        align-items: center;
+    }
+    .phone-navbar{
+        display: flex;
+    }
+}

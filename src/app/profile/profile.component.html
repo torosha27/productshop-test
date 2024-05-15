@@ -1,0 +1,16 @@
+<div class="profile">
+    <div class="profile-card">
+        <div class="user-logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/005/005/788/original/user-icon-in-trendy-flat-style-isolated-on-grey-background-user-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-free-vector.jpg" alt="">
+        </div>
+        <div class="user-data">
+            <p>სახელი : {{ParsedUserData.username}} </p>
+            <p>ელფოსტა : {{ParsedUserData.email}} </p>
+            <p>პაროლი : {{ParsedUserData.password}}</p>
+        </div>
+        <div class="buttons">
+            <button (click)="logout()">Log out</button>
+            <button (click)="deleteaccount()">Delete account</button>
+        </div>
+    </div>
+</div>

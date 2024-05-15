@@ -1,0 +1,67 @@
+<div class="addcart-animation" [ngStyle]="{'background': cartAnimationBackground}" *ngIf="cartAnimation">
+  <i class="fa-solid fa-check animation-cart"></i> <span>{{cartAnimationText}}</span>
+</div>
+<div class="categories-container" *ngIf="categoriesvisible">
+  <div class="categories"*ngIf="categoriesvisible">
+    <h1 style="color:white">Categories</h1>
+    <div class="categories-list">
+      <a (click)="filter('smartphones')">Smartphones</a>
+      <a (click)="filter('laptops')">Laptops</a>
+      <a (click)="filter('fragrances')">Fragrances</a>
+      <a (click)="filter('skincare')">SkinCare</a>
+      <a (click)="filter('all')">All</a>
+    </div>
+  </div>
+</div>
+<div class="product-container" *ngIf="productContainer">
+  <div class="product-cards" *ngIf="productContainer">
+    <div class="card" *ngFor="let product of products">
+      <div class="photo-container">
+        <img [src]="product.thumbnail" alt="{{product.title}}">
+      </div>
+      <div class="desc-container">
+        <p class="card-title">
+          პროდუქტი : <span>{{product.title}}</span>
+        </p>
+        <p>
+          შეფასება : {{product.rating}} ⭐
+        </p>
+        <p>
+          მარაგშია : {{product.stock}} ✔
+        </p>
+        <p>
+          ფასი : {{product.price}} ₾
+        </p>
+      </div>
+      <div class="item-counter">
+        <button (click)="addToCart(product)" class="see-details">კალატაში დამატება</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="addto-cart">
+  <div class="cart" (click)="showCart()">
+    <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+  </div>
+</div>
+<div class="cart-item-container" *ngIf="cartItem">
+  <h1 style="color: white; text-align: center;">კალათა</h1>
+  <div class="product-cards">
+    <div class="card" *ngFor="let product of cartList">
+      <div class="photo-container">
+        <img [src]="product.thumbnail" alt="{{product.title}}">
+      </div>
+      <div class="desc-container">
+        <p class="card-title">
+          პროდუქტი : <span>{{product.title}}</span>
+        </p>
+        <p>
+          ფასი : {{product.price}} ₾
+        </p>
+      </div>
+      <div class="item-counter">
+        <button (click)="deleteProduct(product)" class="see-details">კალათიდან წაშლა</button>
+      </div>
+    </div>
+  </div>
+</div>

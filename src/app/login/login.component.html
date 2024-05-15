@@ -1,0 +1,21 @@
+<main>
+    <div class="login-container">
+        <div class="login">
+            <h2 class="login-text">LOGIN</h2>
+            <form #form = "ngForm" (ngSubmit)="loginUser(form)">
+                <div class="form-box">
+                    <i class="fa-solid fa-user"></i><input type="text" placeholder="Username" ngModel name="username">
+                </div>
+                <div class="form-box">
+                    <i class="fa-solid fa-lock"></i><input type="text" placeholder="Password" ngModel name="password">
+                </div>
+                <div class="form-box">
+                    <button type="submit" class="submit">Submit</button>
+                </div>
+                <div class="reg-account">
+                    <span>არგაქვთ ანგარიში? <a routerLink="/register">რეგისტრაცია</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,30 @@
+<header>
+<div class="header">
+  <div class="header-left-side">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">მთავარდი გვერდი</a>
+  </div>
+  <div class="header-right-side">
+    <a routerLink="/login"> <i class="fa-solid fa-right-to-bracket"></i> ავტორიზაცია </a> 
+    <a routerLink="/contact"> <i class="fa-solid fa-message"></i> კონტაქტი </a> 
+    <a routerLink="/profile"> <i class="fa-solid fa-user"></i> პროფილი </a>
+  </div>
+</div>
+<div class="phone-navbar">
+  <div class="phone-navbar-left">
+    <p style="color: white;" routerLink="/">მთავარი გვერდი</p>
+  </div>
+  <div class="phone-navbar-right">
+      <div class="burger" (click)="slidenav()">
+          <i class="fa-solid fa-burger" style="color: white;"></i>
+          <span style="color: white;">Menu</span> 
+      </div>
+  </div>
+</div>
+<div class="slide-nav {{showclass}} {{class}}">
+  <div class="nav-nav">
+      <a routerLink="/register" (click)="slidenav()">რეგისტრაცია</a>
+      <a routerLink="/login" (click)="slidenav()">ავტორიზაცია</a>
+      <a routerLink="/profile" (click)="slidenav()">პროფილი</a>
+  </div>
+</div>
+</header>

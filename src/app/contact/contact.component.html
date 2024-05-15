@@ -1,0 +1,21 @@
+<main>
+    <div class="contact-container">
+        <div class="contact">
+            <h2 class="contact-text">CONTACT</h2>
+            <form #form = "ngForm" (ngSubmit)="submitForm(form)">
+                <div class="form-box">
+                    <i class="fa-solid fa-user"></i><input type="text" placeholder="Username" ngModel name="username">
+                </div>
+                <div class="form-box">
+                    <i class="fa-solid fa-envelope"></i><input type="email" placeholder="Email" required ngModel name="email">
+                </div>
+                <div class="form-box">
+                    <i class="fa-solid fa-message"></i><input type="text" class="message" placeholder="Your Message" required ngModel name="message">
+                </div>
+                <div class="form-box">
+                    <button type="submit" class="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>

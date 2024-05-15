@@ -1,0 +1,85 @@
+main{
+    background-image: url(https://png.pngtree.com/background/20230521/original/pngtree-commercial-electronics-store-of-many-screens-picture-image_2683696.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.reg-container{
+    display: flex;
+    justify-content: center;    
+}
+.reg-container .reg{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #292f36;
+    padding: 40px;
+    border-radius: 8px;
+}
+.reg-container .form{
+    display: flex;
+    flex-direction: column;
+    min-width: 270px;
+}
+.form-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reg-container form input{
+    border: none;
+    width: 100%;
+    margin: 10px;
+    padding: 15px 20px 15px 20px;
+    font-size: 16px;
+    background-color: #292f36;
+    color: white;
+}
+.reg-container form i{
+    color: white;
+}
+.reg-container form input:focus{
+    outline: none;
+}
+
+.reg-text{
+    color: #e94f37;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.submit{
+    cursor: pointer;
+    margin-top: 15px;
+    background-color: #e94f37;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+}
+
+.submit:hover{
+    transition: 0.5s;
+    background-color: green;
+}
+
+
+.reg-account{
+    margin-top: 15px;
+
+
+}
+
+.reg-account span{
+    color: orangered;
+}
+.reg-account a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+    margin-left: 4px;
+    font-size: 15px;
+}
